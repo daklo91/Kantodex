@@ -27,9 +27,10 @@ export default {
 <style scoped>
 .container {
   display: flex;
+  height: 90px;
 }
 
-.logo-and-search {
+.container .logo-and-search {
   display: flex;
 }
 
