@@ -14,7 +14,4 @@ export default {
 }
 </script>
 
-<style scope>
-.container {
-}
-</style>
+<style scope></style>
