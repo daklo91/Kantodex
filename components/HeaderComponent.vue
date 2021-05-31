@@ -40,5 +40,6 @@ export default {
 
 .nav-links {
   display: flex;
+  margin-right: 0;
 }
 </style>
