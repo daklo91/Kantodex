@@ -20,6 +20,6 @@ export default {}
   font-family: var(--press-start-2p);
   color: var(--dark-gray);
   font-size: 18px;
-  margin-left: 30px;
+  margin-right: 30px;
 }
 </style>

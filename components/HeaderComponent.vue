@@ -1,10 +1,12 @@
 <template>
-  <div class="container">
-    <div class="logo-and-search">
-      <Logo />
-      <FuzzySearch class="fuzzy-search" />
+  <div class="shadow-container">
+    <div class="container-header">
+      <div class="logo-and-search">
+        <Logo />
+        <FuzzySearch class="fuzzy-search" />
+      </div>
+      <NavLinks class="nav-links" />
     </div>
-    <NavLinks class="nav-links" />
   </div>
 </template>
 
@@ -23,23 +25,58 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.shadow-container {
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container-header {
   display: flex;
   height: 90px;
   max-width: 1200px;
   margin: auto;
+  margin-top: 10px;
+  padding-left: 10px;
+  flex-direction: row;
 }
 
-.container .logo-and-search {
+.logo-and-search {
   display: flex;
 }
 
-.container .logo-and-search .fuzzy-search {
+.fuzzy-search {
   margin-left: 40px;
 }
 
 .nav-links {
   display: flex;
   margin-right: 0;
+}
+
+@media screen and (max-width: 950px) {
+  .container-header {
+    flex-direction: column;
+    height: 110px;
+  }
+
+  .logo-and-search {
+    margin: auto;
+  }
+
+  .nav-links {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-header {
+    height: 90px;
+  }
+
+  .nav-links {
+    display: none;
+  }
 }
 </style>
