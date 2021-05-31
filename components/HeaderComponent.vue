@@ -72,11 +72,15 @@ export default {
 
 @media screen and (max-width: 600px) {
   .container-header {
-    height: 90px;
+    height: 56px;
   }
 
   .nav-links {
     display: none;
+  }
+
+  .fuzzy-search {
+    margin-left: 10px;
   }
 }
 </style>

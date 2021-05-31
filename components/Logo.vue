@@ -84,4 +84,16 @@
   margin-left: 0;
   margin-right: 0;
 }
+
+@media screen and (max-width: 600px) {
+  .logo-icon {
+    height: 32px;
+    width: 40px;
+  }
+
+  .logo-text {
+    height: 32px;
+    width: 123px;
+  }
+}
 </style>

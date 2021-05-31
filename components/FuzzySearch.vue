@@ -71,4 +71,17 @@ input:-moz-placeholder {
 .container .search-icon {
   margin: auto;
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-height: 25px;
+    width: 150px;
+  }
+
+  .container input {
+    height: 20px;
+    font-size: 18px;
+    width: 100px;
+  }
+}
 </style>

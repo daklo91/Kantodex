@@ -1,5 +1,6 @@
 <template>
   <svg
+    class="search-icon"
     width="37"
     height="37"
     viewBox="0 0 37 37"
@@ -23,4 +24,11 @@
 export default {}
 </script>
 
-<style scoped></style>
+<style scoped>
+@media screen and (max-width: 600px) {
+  .search-icon {
+    height: 20px;
+    width: 20px;
+  }
+}
+</style>
