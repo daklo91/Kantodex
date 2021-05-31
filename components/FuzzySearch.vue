@@ -22,7 +22,6 @@ export default {
   display: flex;
   max-height: 50px;
   margin: auto;
-  margin-left: 40px;
   width: 225px;
   border: 2px solid transparent;
 }
@@ -42,6 +41,31 @@ export default {
 
 .container input:focus {
   outline: 0;
+}
+
+input[type='text'] {
+  font-family: var(--varela-round);
+}
+
+input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: var(--varela-round);
+  color: var(--gray);
+}
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: var(--varela-round);
+  color: var(--gray);
+}
+input:-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: var(--varela-round);
+  color: var(--gray);
+}
+input:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: var(--varela-round);
+  color: var(--gray);
 }
 
 .container .search-icon {
